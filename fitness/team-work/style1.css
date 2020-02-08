@@ -1,0 +1,30 @@
+header{
+    background-color: aqua;
+}
+
+#principle{
+
+margin-bottom: 0;
+padding-inline-end: 0em;
+padding-bottom: 0px;
+
+}
+
+#title{
+    display: inline;
+    float: center;
+    border-top: aquamarine;
+    color: darkolivegreen;
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+
+}
+
+.navs{
+    background-color: darkturquoise;
+}
+
+.navbar-nav{
+
+    background-color:rgb(240, 179, 105);
+}

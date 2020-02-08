@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Appointment</title>
+</head>
+<body>
+    
+<form accept-charset="UTF-8" action="viewAppointment.html" autocomplete="off" method="GET" target="_blank">
+  <div>Name: <input type="Text" placeholder="Enter First Name" autofocus>
+   <input type="Text" name="Name" placeholder="Enter Last Name" >
+   </div>
+   <br>
+   <div>
+       Age:<input type="text" name="age" value="" pattern="[1-9]{2}" placeholder="Enter Age" maxlength="2">
+       Email:<input type="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" required> 
+       
+       Mobile No:<input type="text" name="Phone Number" placeholder="Enter Mobile No." class="col-md-1" pattern="[1-9]{1}[0-9]{9}" 
+       title="Enter 10 Digit Phone Number, First Digit Can not be Zero" maxlength="10" minlength="10" required>
+
+
+   </div>
+<br>
+<form class="">
+    <fieldset >
+    
+
+    <legend>Address</legend>
+    
+
+    <div class="form-group">
+      <label class="col-md-4 control-label" for=""></label>  
+      <div class="col-md-6">
+      <input id="" name="" type="text" class="form-control input-md">
+      <span class="help-block" aria-placeholder="bottom">Steet Address</span>  
+      </div>
+    </div>
+
+    <br>
+
+      <input id="" name="" type="text" placeholder="" class="form-control input-md">
+      <span class="help-block">City</span>  
+    
+
+        <input id="" name="" type="text" placeholder="" class="form-control input-md">
+        <span class="help-block">State</span>  
+      
+      <br>
+
+<div class="form-group">
+    <br>
+    <label class="col-md-4 control-label" for="selectbasic">Country</label>
+      <select id="selectcountry" name="" class="form-control">
+        <option value="1">India</option>
+        <option value="2">America</option>
+        <option value="3">China</option>
+        <option value="4">Japan</option>
+      </select>
+  </div>
+
+    <br>
+    <div class="form-group">
+
+        <input id="" name="" type="text" placeholder="" class="form-control input-md" pattern="[0-9]{6}" maxlength="6" minlength="6"/>
+        <span class="help-block">Pin-Code</span>  
+        </div>
+      </div>
+    </fieldset>
+
+<div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="radios"><h3>Trainer Preference</h3></label>
+
+  <div class="col-md-4">
+  <div class="radio">
+    <label for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+      Male Trainer
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      Female Trainer
+    </label>
+  </div>
+  <div class="radio">
+    <label for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="3">
+      No Preference
+    </label>
+	</div>
+  </div>
+</div>
+</div>
+<br>
+
+<!-- JS part -->
+<div>
+<script type="text/javascript">
+  function ShowHideDiv() {
+      var chkYes = document.getElementById("chkYes");
+      var other = document.getElementById("other");
+      other.style.display = chkYes.checked ? "block" : "none";
+  }
+</script>
+<span><strong>Want to give Trainer Name:</strong> </span>
+<label for="chkYes">
+  <input type="radio" id="chkYes" name="chkother" onclick="ShowHideDiv()" />
+  Yes
+</label>
+<label for="chkNo">
+  <input type="radio" id="chkNo" name="chkother" onclick="ShowHideDiv()" />
+  No
+</label>
+<hr />
+<div id="other" style="display: none">
+ Trainer Name:
+  <input type="text" id="trid" />
+</div>
+</div>
+
+
+
+
+
+
+<div id="wrapper">
+  <label for="yes_no_radio"><h3>Do you Need a physiotherapist?</h3></label>
+<p>
+<input type="radio" name="yes_no" checked>Yes</input>
+</p>
+<p>
+<input type="radio" name="yes_no">No</input>
+</p>
+</div>
+
+</div>
+<hr>
+
+<tr><td><h2>Appointment :</h2></td></tr>
+<table border="1" align="page-left" cellspacing="2" cellpadding="4">
+    <tr>
+        <td><strong>Day</strong></td>
+        <td><strong>7-9a.m</strong></td>
+        <td><strong>9-11am</strong></td>
+        <td><strong>11-1pm</strong></td>
+        <td><strong>1-3pm</strong></td>
+        <td><strong>3-5pm</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Monday</strong></td>
+        <td><input type="radio" name="one" value="1">1</td>
+        <td><input type="radio" name="one" value="2">2</td>
+        <td><input type="radio" name="one" value="3">3</td>
+        <td><input type="radio" name="one" value="4">4</td>
+        <td><input type="radio" name="one" value="5">5</td>
+    </tr>
+    <tr>
+        <td><strong>Tuesday</strong></td>
+        <td><input type="radio" name="sev" value="1">1</td>
+        <td><input type="radio" name="sev" value="2">2</td>
+        <td><input type="radio" name="sev" value="3">3</td>
+        <td><input type="radio" name="sev" value="4">4</td>
+        <td><input type="radio" name="sev" value="5">5</td>
+    </tr>
+    <tr>
+        <td><strong>Wednesday</strong></td>
+        <td><input type="radio" name="six" value="1">1</td>
+        <td><input type="radio" name="six" value="2">2</td>
+        <td><input type="radio" name="six" value="3">3</td>
+        <td><input type="radio" name="six" value="4">4</td>
+        <td><input type="radio" name="six" value="5">5</td>
+    </tr>
+    <tr>
+        <td><strong>Thursday</strong></td>
+        <td><input type="radio" name="five" value="1">1</td>
+        <td><input type="radio" name="five" value="2">2</td>
+        <td><input type="radio" name="five" value="3">3</td>
+        <td><input type="radio" name="five" value="4">4</td>
+        <td><input type="radio" name="five" value="5">5</td>
+    </tr>
+    <tr>
+        <td><strong>Friday</strong></td>
+        <td><input type="radio" name="four" value="1">1</td>
+        <td><input type="radio" name="four" value="2">2</td>
+        <td><input type="radio" name="four" value="3">3</td>
+        <td><input type="radio" name="four" value="4">4</td>
+        <td><input type="radio" name="four" value="5">5</td>
+    </tr>
+    <tr>
+        <td><strong>Saturday</strong></td>
+        <td><input type="radio" name="three" value="1">1</td>
+        <td><input type="radio" name="three" value="2">2</td>
+        <td><input type="radio" name="three" value="3">3</td>
+        <td><input type="radio" name="three" value="4">4</td>
+        <td><input type="radio" name="three" value="5">5</td>
+    </tr>
+    <tr>
+        <td><strong>Sunday</strong></td>
+        <td><input type="radio" name="two" value="1">1</td>
+        <td><input type="radio" name="two" value="2">2</td>
+        <td><input type="radio" name="two" value="3">3</td>
+        <td><input type="radio" name="two" value="4">4</td>
+        <td><input type="radio" name="two" value="5">5</td>
+    </tr>
+</table>
+</div>
+
+<div>
+  <label><h3>Select a Package :</h3></label>
+  <input type="radio" name="reason" value="package" id="var">One Time Assessment Only (INR 500)<br/>
+  <input type="radio" name="reason" value="package" id="var">Weekly Sessions (INR 400/session)<br/>
+  <input type="radio" name="reason" value="package" id="var">12 Weekly Sessions (INR 300/sessions)<br/>
+  <input type="radio" name="reason" value="package" id="var">Other <input type="text" name="Other_package" />​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​<br/>
+  
+  
+</div>
+<br>
+<hr>
+<div>
+  <label><h3>Quote :</h3></label>
+
+  <label>INR </label>
+  <input type="text" id="rup">
+  <label>Paise</label>
+  <input type="text" id="paise">
+</div>
+<br>
+<div>
+</div>
+<button>Submit</button>
+</form>
+</form>
+
+<form accept-charset="UTF-8" action="viewAppointment.html" autocomplete="off" method="GET" target="_blank">
+</form>
+</body>
+</html>
